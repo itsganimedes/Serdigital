@@ -20,6 +20,8 @@
     flex-direction: row;
     color: #292929;
     gap: 3rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .txt_img_info{
@@ -187,6 +189,8 @@
 .servicios_ej{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 3rem 0;
     gap: 1.5rem;
@@ -222,6 +226,25 @@
 
 .servicio_ej b{
     margin: 1rem 0;
+}
+
+@media (max-width: 1050px)
+{
+    .servicios_ej{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .servicio_ej{
+        width: 80%;
+    }
+}
+
+@media (max-width: 650px)
+{
+    .servicio_ej{
+        width: 100%;
+    }
 }
 
 /* IMAGEN Y TEXTO */
@@ -306,7 +329,7 @@
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #080808, transparent);
+    background: linear-gradient(90deg, transparent, #27d2df, transparent);
     transition: 0.4s;
 }
 
@@ -344,6 +367,19 @@
     background: #2d4c61;
 }
 
+@media (max-width: 1250px){
+
+    .contactoyform{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .form-atractivo{
+        justify-content: center;
+    }
+}
+
 @media (max-width: 650px){
 
     .contactoyform{
@@ -363,11 +399,11 @@
     }
 
     .cta input{
-    width: 22rem;
+    width: 18rem;
 }
 
     .cta input[type="submit"]
     {
-        width: 22rem;
+        width: 18rem;
     }
 }

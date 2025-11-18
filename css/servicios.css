@@ -1,0 +1,80 @@
+.servicios{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 0 1 calc(33.33% - 1rem);
+    background: #eee;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgb(0,0,0,0.2);
+    border: 1px solid rgb(250,250,250,0.08);
+    height: 16rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.servicio:hover{
+    border: 1px solid #338296;
+}
+
+.servicio .cuadro{
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    top: -1.2rem;
+    left: 0;
+}
+
+.servicio i{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    color: rgb(18, 22, 236);
+}
+
+.servicio b{
+    text-align: left;
+    max-width: 90%;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.precio{
+    color: rgb(0, 128, 0);
+    font-weight: bold;
+}
+
+.button_precio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2rem 0 0 0;
+}
+
+.button_precio a{
+    color: #181818;
+    padding: 0.2rem 1rem;
+    background: #94c4eb;
+    border-radius: 10px;
+}
+
+@media  (max-width: 1050px)
+{
+    .servicio{
+        width: 100%;
+        height: 18rem;
+        flex: 25rem;
+    }
+}
