@@ -55,3 +55,19 @@ a:hover{
     font-weight: bold;
     text-align: center;
 }
+
+@media (max-width: 1050px)
+{
+    .main{
+        padding: 3rem 4rem;
+        text-align: justify;
+    }
+
+    .other_color_sec
+    {
+        background: #c9d8e7;
+        padding: 3rem 4rem;
+        margin: 0 -4rem;
+        width: calc(100% + 8rem);
+    }
+}
