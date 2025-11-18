@@ -1,0 +1,373 @@
+/* TEXTO E IMAGEN */
+
+.img-main{
+    width: 55rem;
+    height: 25rem;
+    background: url("../img/identity.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 6px rgb(0,0,0,0.09);
+}
+
+.img-main:hover{
+    transform: rotate(2deg) scale(0.95);
+}
+
+.txt_img{
+    display: flex;
+    flex-direction: row;
+    color: #292929;
+    gap: 3rem;
+}
+
+.txt_img_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.txt_img p{
+    max-width: 70%;
+}
+
+.img-main:hover{
+    transform: rotate(2deg) scale(0.95);
+}
+
+/* ESPACIO */
+
+.espacio{
+    width: 100%;
+    margin: 3rem 0;
+}
+
+/* IMAGEN Y TEXTO */
+
+.img-main-2{
+    width: 35rem;
+    height: 30rem;
+    background: url("../img/team.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 6px rgb(0,0,0,0.09);
+}
+
+.img-main-2:hover{
+    transform: rotate(2deg) scale(0.95);
+}
+
+
+.txt_img_2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #292929;
+    gap: 3rem;
+}
+
+.txt_img_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.txt_img_info .lista_caracteristicas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.txt_img_info .lista_caracteristicas i{
+    margin: 0.2rem 0.5rem 0 0;
+    color: #4b7fa1;
+}
+
+.txt_img_info .lista_caracteristica{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.txt_img p{
+    max-width: 70%;
+}
+
+/* BOTONES */
+
+.a_button{
+    padding: 1rem 2rem;
+    background: #4b7fa1;
+    color: #eee;
+    width: fit-content;
+    border-radius: 25px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgb(0,0,0,0.09);
+}
+.a_button-2{
+    padding: 1rem 2rem;
+    background: #eee;
+    color: #4b7fa1;
+    width: fit-content;
+    border-radius: 25px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgb(0,0,0,0.09);
+}
+
+.botones_row
+{
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+@media (max-width: 1050px)
+{
+    .txt_img{
+        flex-direction: column;
+    }
+
+    .txt_img_info{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-main{
+        width: 100%;
+    }
+
+    .txt_img p{
+        max-width: 100%;
+    }
+
+    .txt_img_2{
+        flex-direction: column;
+    }
+
+    .txt_img_info{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-main-2{
+        width: 100%;
+        height: 20rem;
+    }
+
+    .txt_img2 p{
+        max-width: 100%;
+    }
+
+    .a_button{
+        width: 100%;
+        margin: 0;
+    }
+
+    .a_button-2{
+        width: 100%;
+        margin: 0;
+    }
+
+    .botones_row
+    {
+        flex-direction: column;
+    }
+
+}
+
+/* SERVICIOS EJEMPLO */
+
+.servicios_ej{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+    gap: 1.5rem;
+}
+
+.servicio_ej{
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: 0.1s;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.servicio_ej:hover{
+    box-shadow: 0 8px 6px rgb(0,0,0,0.08);
+}
+
+.servicio_ej:hover i{
+    transform: scale(1.03);
+}
+
+.servicio_ej i{
+    font-size: 1.5rem;
+    background: #d0dce4;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #4b7fa1;
+}
+
+.servicio_ej b{
+    margin: 1rem 0;
+}
+
+/* IMAGEN Y TEXTO */
+
+.contactoyform{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.formascontacto{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding: 1rem 2rem;
+    background: #eee;
+    color: #4b7fa1;
+    width: 30rem;
+    border-radius: 15px;
+    border: 1px solid rgb(250, 250, 250, 0.08);
+    box-shadow: 0 4px 6px rgb(0,0,0,0.09);
+}
+
+.contacto i{
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    background: #d7e1e7;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+/* FORMULARIO */
+
+.form-atractivo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* CALL TO ACTION CTA */
+
+.cta{
+    width: 35rem;
+    height: 34rem;
+    background: #ebebeb;
+    border: 1px solid rgb(250,250,250,0.08);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 4rem 0 2rem 0;
+}
+
+.cta:hover::before{
+    left: 100%;
+}   
+
+.cta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #080808, transparent);
+    transition: 0.4s;
+}
+
+.cta form label{
+    color: #ccc;
+    font-size: 0.8rem;
+    margin-left: 0.2rem;
+}
+
+.cta input{
+    border-radius: 15px;
+    border: none;
+    width: 28rem;
+    height: 2rem;
+    padding: 1.4rem 1rem;
+    background: #c0ddf0;
+}
+
+.cta input[type="submit"]
+{
+    all: unset;
+    background: #569cca;
+    width: 28rem;
+    padding: 0.7rem 0;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: 0.2s;
+}
+
+.cta input[type="submit"]:hover
+{
+    cursor: pointer;
+    transform: translateY(-0.1rem);
+    background: #2d4c61;
+}
+
+@media (max-width: 1050px){
+
+    .contactoyform{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .cta{
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .contacto{
+        width: 100%;
+    }
+
+    .cta input{
+    width: 22rem;
+}
+
+    .cta input[type="submit"]
+    {
+        width: 22rem;
+    }
+}

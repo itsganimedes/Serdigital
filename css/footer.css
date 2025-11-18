@@ -1,0 +1,52 @@
+footer{
+    color: #ccc;
+    text-align: left;
+    position: relative;
+    margin: 5rem 0 0 0;
+    background: #1173b4;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 4rem 0;
+    gap: 5rem;
+}
+
+footer a{
+    color: white;
+}
+
+.seccion{
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+.seccion b{
+    margin: 1rem 0;
+}
+
+.seccion a{
+    color: rgb(243, 243, 243);
+}
+
+.seccion section{
+    display: flex;
+    flex-direction: column;
+    max-width: 25rem;
+    height: 5rem;
+    align-items: flex-start;
+}
+
+.seccion img{
+    width: 4%;
+    margin: 1rem 0;
+}
+
+@media (max-width: 1050px)
+{
+    footer{
+        flex-direction: column;
+        padding: 3rem 5rem;
+    }
+}
