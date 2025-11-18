@@ -74,7 +74,7 @@
         text-wrap: nowrap;
     }
 
-    @media (max-width: 1050px)
+    @media (max-width: 650px)
     {
         .header_nav{
             flex-direction: column;

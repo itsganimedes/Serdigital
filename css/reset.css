@@ -56,7 +56,7 @@ a:hover{
     text-align: center;
 }
 
-@media (max-width: 1050px)
+@media (max-width: 650px)
 {
     .main{
         padding: 3rem 4rem;

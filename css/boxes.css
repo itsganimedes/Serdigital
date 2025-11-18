@@ -128,7 +128,7 @@
     gap: 2rem;
 }
 
-@media (max-width: 1050px)
+@media (max-width: 650px)
 {
     .txt_img{
         flex-direction: column;
@@ -344,7 +344,7 @@
     background: #2d4c61;
 }
 
-@media (max-width: 1050px){
+@media (max-width: 650px){
 
     .contactoyform{
         flex-direction: column;
