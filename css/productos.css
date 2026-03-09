@@ -1,0 +1,65 @@
+.productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+.producto{
+    box-shadow: 0 4px 6px rgb(0,0,0,0.2);
+    width: 15rem;
+    height: 20rem;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+    flex: 0 1 calc(22% - 1rem);
+}
+
+.producto_title{
+    font-weight: bold;
+}
+
+.producto:hover{
+    box-shadow: 0 4px 10px rgb(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.producto:hover .producto_img{
+    transform: scale(1.05);
+}
+
+.producto_img{
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1rem;
+}
+
+.producto_info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.producto_price{
+    position: absolute;
+    color: green;
+    right: 0.5rem;
+    bottom: 0.5rem;
+}
+
+@media (max-width: 768px){
+    .producto{
+        flex: 10rem;
+    }
+}
