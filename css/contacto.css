@@ -1,56 +1,90 @@
-.formas_contacto{
+:root {
+    --primary-color: #2b6cb0;
+    --bg-card: #f8fafc;
+    --bg-info: #f0fdfa;
+    --border-info: #0d9488;
+    --text-main: #334155;
+    --text-muted: #64748b;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.formas_contacto {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 5rem;
+    justify-content: center; /* Cambiado a center para que no se dispersen tanto en pantallas gigantes */
+    padding: 2rem 5rem;
+    flex-wrap: wrap; /* Evita que se rompa si agregas más de 3 elementos */
 }
 
-.forma_contacto{
+.forma_contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 15rem;
-    background: rgb(205, 224, 236);
-    padding: 3rem 2rem;
-    border-radius: 10px;
-    margin: 2rem 0;
-    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.2);
-    width: 15rem;
+    height: 16rem;
+    width: 16rem;
+    background: var(--bg-card);
+    padding: 2.5rem 2rem;
+    border-radius: 16px; /* Bordes más redondeados y modernos */
+    border: 1px solid #e2e8f0; /* Un borde sutil define mejor la tarjeta */
+    box-shadow: var(--shadow-md);
     text-align: center;
+    color: var(--text-main);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Transición fluida */
 }
 
-.forma_contacto:hover{
-    transform: scale(1.05);
+/* Efecto Hover Moderno (Sube un poco y la sombra se vuelve más profunda) */
+.forma_contacto:hover {
+    transform: translateY(-8px); 
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
 }
 
-.forma_contacto i{
+/* Cambia el color del icono al pasar el cursor para darle vida */
+.forma_contacto:hover i {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.forma_contacto i {
     font-size: 3rem;
+    color: var(--text-muted);
+    transition: all 0.3s ease;
 }
 
-.horarios{
-    margin: 2rem 0;
-    font-size: 1.2rem;
+/* Sección de Horarios */
+.horarios {
+    margin: 2.5rem 0;
+    font-size: 1.1rem;
+    max-width: 600px; /* Para que no ocupe todo el ancho de la pantalla y sea más legible */
+    color: var(--text-main);
 }
 
-.horarios-info{
-    background: #c6eeee;
-    border-left: 4px solid #83bebe;
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 1rem 0;
-    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.2);
+.horarios-info {
+    background: var(--bg-info);
+    border-left: 5px solid var(--border-info);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: var(--shadow-sm);
 }
 
+/* Responsive / Media Queries */
 @media (max-width: 1050px) {
-    .formas_contacto{
+    .formas_contacto {
         flex-direction: column;
-        gap: 0;
+        gap: 1.5rem;
+        padding: 2rem 1.5rem; /* Menos padding en los lados para móviles */
     }
 
-    .forma_contacto{
+    .forma_contacto {
         width: 100%;
+        max-width: 22rem; /* Para que en móvil no se estire horizontalmente de forma fea */
+        height: auto; /* Permite que el contenido se adapte */
+        gap: 1.5rem;
     }
 }
